@@ -1,7 +1,8 @@
 body {
   font-family: Arial, sans-serif;
   text-align: center;
-  background-color: #f4f4f4;
+  background-color: rgb(50, 50, 50);
+  
 }
 .boton-jugada {
   background-color: #3498db;
@@ -10,7 +11,53 @@ body {
   font-size: 16px;
   cursor: pointer;
 }
+
+.boton-jugada:hover {
+  transform: scale(1.1);
+  background-color: #145f91;
+  transition: all .2s ease;
+}
+
+#contador-usuario {
+  background-color: #3498db;
+  margin: 10px;
+  padding: 10px;
+}
+
+#contador-ordenador {
+  background-color: red;
+  margin: 10px;
+  padding: 10px;
+  color: white;
+}
+
 #resultados {
-  font-size: 20px;
-  margin: 20px 0;
+  font-size: 30px;
+  margin: 30px 0;
+  color: white;
+}
+
+#boton-reiniciar {
+  background-color: red;
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+#boton-reiniciar:hover {
+  background-color: darkred;
+  transition: all .2s ease;
+  transform: scale(1.1);
+}
+
+#contador-usuario, #contador-ordenador {
+  max-width: 450px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  margin: auto;
 }
